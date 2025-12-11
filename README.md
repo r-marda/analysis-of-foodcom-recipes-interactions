@@ -10,6 +10,7 @@ This project analyzes Food.com recipes (2008–2018) and their user reviews to u
 - **RAW_interactions.csv**: ~1.1M user interactions with ratings (1-5 stars) and free-text reviews linked to recipes
 
 After data cleaning and filtering (removing outliers in preparation time and calories, filtering unrealistic nutritional values), the final dataset contains approximately 170,000 interactions.
+[**INSERT IMAGE**: Datatset sample]
 
 ## Research Questions
 
@@ -106,8 +107,6 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - Substantially outperforms linear approaches, indicating recipe duration involves complex, nonlinear relationships
 - Categorical features (tags) are more predictive than numeric features alone
 
-[**INSERT IMAGE**: Actual vs Predicted Duration]
-
 ### 6. Fairness Analysis
 
 **Question**: Does the model perform equitably across different recipe types?
@@ -121,8 +120,6 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - **Permutation test p-value**: < 0.001 (statistically significant)
 
 **Conclusion**: The model exhibits **significant fairness concerns**. It predicts duration much less accurately for meat-based recipes, suggesting the model may be biased toward vegetable-based recipes. Further investigation and mitigation strategies are recommended.
-
-[**INSERT IMAGE**: Prediction Error Distribution by Recipe Type]
 
 ## Key Insights
 
