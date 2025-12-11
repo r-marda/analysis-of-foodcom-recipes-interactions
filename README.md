@@ -1,7 +1,3 @@
-# Analysis of Food.com Recipes and Reviews
-
-**Authors**: Rohan Marda, Mianzhi Hu
-
 ## Project Overview
 
 This project analyzes Food.com recipes (2008–2018) and their user reviews to understand what makes recipes popular and how content features relate to preparation time and user satisfaction. By examining over 230,000 recipes and 1.1 million user interactions, we investigate the drivers behind recipe success and build predictive models for cooking duration.
