@@ -59,7 +59,19 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 
 [**INSERT IMAGE**: Feature Correlation Matrix]
 
-### 3. Hypothesis Testing: Protein Content and Calorie Distribution
+### 3. Assessment of Missingness
+
+**Finding**: Approximately 2,000 recipes (~3.6%) are missing average ratings.
+
+**Permutation Test for Missingness Dependency**:
+- Null Hypothesis: Missingness is independent of recipe duration
+- Test statistic: Absolute difference in mean minutes between missing and present ratings
+- **Result**: p-value < 0.001 (strong evidence of MAR)
+- **Conclusion**: Missingness depends on recipe duration—longer recipes are less likely to be rated
+
+**Imputation Strategy**: Missing ratings were imputed using the mean rating for each duration quartile, accounting for the observed dependency.
+
+### 4. Hypothesis Testing: Protein Content and Calorie Distribution
 
 **Question**: Do high-protein and low-protein recipes have the same calorie distribution?
 
@@ -71,18 +83,6 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - High-protein recipes (≥16% protein) tend to cluster at different calorie levels than low-protein recipes (<16% protein)
 
 [**INSERT IMAGE**: ECDF Comparison - High vs Low Protein Recipes]
-
-### 4. Assessment of Missingness
-
-**Finding**: Approximately 2,000 recipes (~3.6%) are missing average ratings.
-
-**Permutation Test for Missingness Dependency**:
-- Null Hypothesis: Missingness is independent of recipe duration (MCAR)
-- Test statistic: Absolute difference in mean minutes between missing and present ratings
-- **Result**: p-value < 0.001 (strong evidence of MAR)
-- **Conclusion**: Missingness depends on recipe duration—longer recipes are less likely to be rated
-
-**Imputation Strategy**: Missing ratings were imputed using the mean rating for each duration quartile, accounting for the observed dependency.
 
 ### 5. Prediction Model: Estimating Recipe Duration
 
