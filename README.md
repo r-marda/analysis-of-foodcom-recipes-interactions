@@ -7,7 +7,7 @@ This project analyzes Food.com recipes (2008–2018) and their user reviews to u
 - **RAW_recipes.csv**: ~230K recipes with metadata including name, tags, ingredients, steps, nutritional information, preparation time, and submission date
 - **RAW_interactions.csv**: ~1.1M user interactions with ratings (1-5 stars) and free-text reviews linked to recipes
 
-After data cleaning and filtering (removing outliers in preparation time and calories, filtering unrealistic nutritional values), the final dataset contains approximately 55,000 recipes.
+After data cleaning and filtering (removing outliers in preparation time and calories, filtering unrealistic nutritional values), the final dataset contains approximately 170,000 interactions.
 
 ## Research Questions
 
@@ -138,5 +138,4 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - `README.md`: This summary document
 
 ## Website
-
 For an interactive version of this analysis, visit: [https://r-marda.github.io/analysis-of-foodcom-recipes-interactions/](https://r-marda.github.io/analysis-of-foodcom-recipes-interactions/)
