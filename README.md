@@ -165,7 +165,7 @@ Fig 7:
 |-------|------|
 | Baseline Linear Regression | 53.0 |
 | Linear + Feature Engineering | 52.2 |
-| Polynomial Regression | 52.5 |
+| Polynomial Regression | 51.2 |
 | **Random Forest (Final)** | **47.0** |
 
 **Best Model**: Random Forest Regressor (200 estimators, max depth 10)
