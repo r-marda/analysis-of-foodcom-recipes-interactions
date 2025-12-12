@@ -1,4 +1,3 @@
-## Analysis of Food.com Recipes and Interactions
 
 ## Project Overview
 
