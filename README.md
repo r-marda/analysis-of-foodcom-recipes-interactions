@@ -10,7 +10,8 @@ This project analyzes Food.com recipes (2008–2018) and their user reviews to u
 - **RAW_interactions.csv**: ~1.1M user interactions with ratings (1-5 stars) and free-text reviews linked to recipes
 
 After data cleaning and filtering (removing outliers in preparation time and calories, filtering unrealistic nutritional values), the final dataset contains approximately 170,000 interactions.
-[**INSERT IMAGE**: Datatset sample]
+
+![Dataset sample](./images/dataset_sample.png)
 
 ## Research Questions
 
@@ -26,9 +27,9 @@ After data cleaning and filtering (removing outliers in preparation time and cal
 - Calorie distribution peaks between 100-1000 calories, consistent with typical recipes
 - Nutritional values (protein, fat, sodium, carbs) vary widely but most recipes fall within reasonable ranges
 
-[**INSERT IMAGE**: Distribution of Preparation Time]
+![Preparation time distribution](./images/preparation.png)
 
-[**INSERT IMAGE**: Distribution of Calories]
+![Calories time distribution](./images/calories.png)
 
 **Text Analysis:**
 - Most frequent unigrams in recipe names: "chicken," "easy," "best," "sauce," "quick"
@@ -37,9 +38,9 @@ After data cleaning and filtering (removing outliers in preparation time and cal
 
 This suggests users prioritize recipes that are quick, simple, and feature popular ingredients.
 
-[**INSERT IMAGE**: Top 10 Unigrams in Recipe Names]
+![Top unigrams](./images/top_unigrams.png)
 
-[**INSERT IMAGE**: Top 10 Tags]
+![Top tags](./images/top_tags.png)
 
 ### 2. Bivariate Analysis
 
@@ -48,15 +49,15 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - Recipe complexity (number of steps and ingredients) shows weak correlation with ratings
 - Recipes submitted per year show a clear declining trend from 2008 to 2018, indicating decreasing platform engagement
 
-[**INSERT IMAGE**: Calories vs Ratings (Box Plot)]
+![Box plot: calories vs. ratings](./images/box_calories_ratings.png)
 
-[**INSERT IMAGE**: Recipes Submitted Per Year]
+![Recipes submitted per year](./images/recipes_yearly.png)
 
 **Feature Correlations:**
 - Moderate positive correlation (0.39) between number of ingredients and number of steps, suggesting complex recipes tend to have both more ingredients and steps
 - Nutritional attributes show moderate intercorrelation, indicating recipes higher in one nutrient tend to be higher in others as well
 
-[**INSERT IMAGE**: Feature Correlation Matrix]
+![Features correlations](./images/features_correlations.png)
 
 ### 3. Assessment of Missingness
 
@@ -81,7 +82,7 @@ This suggests users prioritize recipes that are quick, simple, and feature popul
 - **Conclusion**: Reject null hypothesis. High-protein and low-protein recipes have **statistically distinct** calorie distributions.
 - High-protein recipes (≥16% protein) tend to cluster at different calorie levels than low-protein recipes (<16% protein)
 
-[**INSERT IMAGE**: ECDF Comparison - High vs Low Protein Recipes]
+![ECDF comparison of high and low protein foods](./images/ecdf_high_low_protein.png)
 
 ### 5. Prediction Model: Estimating Recipe Duration
 
