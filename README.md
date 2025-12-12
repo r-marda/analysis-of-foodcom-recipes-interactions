@@ -144,7 +144,7 @@ Fig 7:
 - High-protein recipes (≥16% protein) tend to cluster at different calorie levels than low-protein recipes (<16% protein) ()
 
 <iframe
-  src="assets/ecdf_high_low_protein.html"
+  src="assets/ks_visualization.html"
   width="800"
   height="600"
   frameborder="0"
